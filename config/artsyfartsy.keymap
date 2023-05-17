@@ -45,6 +45,29 @@
 #define MIDDLE_NONES NONE(0, 0, 0)
 #define TRAILING_NONES NONE(0, 0, 0)
 
+// Define Layer Base Characters
+#define ARDUX_BASE_A A
+#define ARDUX_BASE_R R
+#define ARDUX_BASE_T T
+#define ARDUX_BASE_S S
+#define ARDUX_BASE_E E
+#define ARDUX_BASE_Y Y
+#define ARDUX_BASE_I I
+#define ARDUX_BASE_O O
+#define ARDUX_COMBO_N N
+
+// Define Layer IDs
+#define LAYER_ID_GLOBAL -1
+#define LAYER_ID_BASE 0
+#define LAYER_ID_NUMBERS 1
+#define LAYER_ID_SYMBOLS 2
+#define LAYER_ID_PARENTHETICALS 3
+#define LAYER_ID_NAVIGATION 4
+#define LAYER_ID_BT_SEL 5
+#define LAYER_ID_CUSTOM 6
+#define LAYER_ID_BIG_SYM 7
+#define LAYER_ID_BIG_FUNCTION 8
+
 // BEHAVIOR
 // ====================================================
 
@@ -73,7 +96,7 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-// TAIPO COMBOS
+// ARTSEY COMBOS
 
 	#define COMBO(NAME, BINDINGS, KEYPOS) \
 	combo_##NAME { \
@@ -87,10 +110,6 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-		// Function layer doesn't apply to non-big ardux presently
-		#if defined ARDUX_BIG
-		combo_layer_functions { key-positions = <KEY_F_TOP KEY_F_BOTTOM>; bindings = <&sl LAYER_ID_BIG_FUNCTION>; };
-		#endif
 		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp ENTER>; };
 		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
 		combo_gui        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
