@@ -97,6 +97,32 @@
 		COMBO(6,&kp DELETE,KBR KTM, 0 1 2 3 4 5)
 		COMBO(7,&kt LSHFT,KBM KTM, 0 1 2 3 4 5)
 
+		COMBO(8,&kp B,KBI KBP, 0 1 2 3 4 5)
+		COMBO(9,&kp C,KBI KBM, 0 1 2 3 4 5)
+		COMBO(10,&kp N,KBP KBR, 0 1 2 3 4 5)
+		COMBO(11,&kp F,KTI KTR, 0 1 2 3 4 5)
+		COMBO(12,&kp G,KTR KTM, 0 1 2 3 4 5)
+		COMBO(13,&kp U,KBR KBM, 0 1 2 3 4 5)
+		COMBO(14,&kp H,KBI KBM, 0 1 2 3 4 5)
+		COMBO(15,&kp V,KTP KTM, 0 1 2 3 4 5)
+		COMBO(16,&kp J,KTP KTR, 0 1 2 3 4 5)
+		COMBO(17,&kp W,KTP KTI, 0 1 2 3 4 5)
+		COMBO(18,&kp W,KBP KBM, 0 1 2 3 4 5)
+
+		COMBO(19,&kp PERIOD,KBM KTI, 0 1 2 3 4 5)
+		COMBO(20,&kp COMMA,KBR KTI, 0 1 2 3 4 5)
+		COMBO(21,&kp SLASH,KBP KTI, 0 1 2 3 4 5)
+		COMBO(22,&kp EXCL,KTR KBR, 0 1 2 3 4 5)
+
+		COMBO(23,&kp N7,KTM KTI, 1)
+		COMBO(24,&kp N8,KTR KTM, 1)
+		COMBO(25,&kp N9,KBM KBI, 1)
+		COMBO(26,&kp N0,KBR KBM, 1)
+
+		/***************
+		* 3 key combos
+		****************/
+
 
    };
 
