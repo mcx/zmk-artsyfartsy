@@ -75,18 +75,18 @@
 	'-----------------------' 
 */
 // ARTSEY COMBOS
-// example
-// combos {
-//        compatible = "zmk,combos";
-//        combo_esc {
-//            timeout-ms = <50>;
-//            key-positions = <0 1>;
-//            bindings = <&kp ESC>;
-//        };
-*/
+
+	#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
+	combo_##NAME { \
+		timeout-ms = <50>; \
+		bindings = <BINDINGS>; \
+		key-positions = <KEYPOS>; \
+		layers = <LAYER>; \
+	};
+
    combos {
         compatible = "zmk,combos";
-		COMBO(1,&kp ENTER,KTI,KBI)
+		COMBO(1,&kp ENTER,KTI KBI)
    }
 
 // KEYMAP
