@@ -40,33 +40,6 @@
 #define KEY_I 5
 #define KEY_O 4
 
-// Define Offsets
-#define LEADING_NONES NONE(0,0,0)
-#define MIDDLE_NONES NONE(0, 0, 0)
-#define TRAILING_NONES NONE(0, 0, 0)
-
-// Define Layer Base Characters
-#define ARDUX_BASE_A A
-#define ARDUX_BASE_R R
-#define ARDUX_BASE_T T
-#define ARDUX_BASE_S S
-#define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
-#define ARDUX_BASE_I I
-#define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
-
-// Define Layer IDs
-#define LAYER_ID_GLOBAL -1
-#define LAYER_ID_BASE 0
-#define LAYER_ID_NUMBERS 1
-#define LAYER_ID_SYMBOLS 2
-#define LAYER_ID_PARENTHETICALS 3
-#define LAYER_ID_NAVIGATION 4
-#define LAYER_ID_BT_SEL 5
-#define LAYER_ID_CUSTOM 6
-#define LAYER_ID_BIG_SYM 7
-#define LAYER_ID_BIG_FUNCTION 8
 
 // BEHAVIOR
 // ====================================================
@@ -98,14 +71,7 @@
 */
 // ARTSEY COMBOS
 
-    combos {
-		compatible = "zmk,combos";
-		/*****************************************
-		 * 2 key combos
-		 *****************************************/
 
-		
-	};
 
 // KEYMAP
 // ====================================================
