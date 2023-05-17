@@ -75,7 +75,7 @@
 	'-----------------------' 
 */
 // ARTSEY COMBOS
-
+// name of the combo, output of the combo, input for the combo, applied on which layers
 	#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
 	combo_##NAME { \
 		timeout-ms = <50>; \
@@ -90,6 +90,14 @@
 		* 2 key combos
 		****************/
 		COMBO(1,&kp ENTER,KTI KBI,0 1 2 3 4 5)
+		COMBO(2,&sk LCTRL,KBI KTP, 0 1 2 3 4 5)
+		COMBO(3,&sk LGUI,KBM KTP, 0 1 2 3 4 5)
+		COMBO(4,&sk RALT,KBR KTP, 0 1 2 3 4 5)
+		COMBO(5,&kb BACKSPACE,KBI KTM, 0 1 2 3 4 5)
+		COMBO(6,&kb DELETE,KBR KTM, 0 1 2 3 4 5)
+		COMBO(7,&kt LSHFT,KBM KTM, 0 1 2 3 4 5)
+
+		
    };
 
 // KEYMAP
