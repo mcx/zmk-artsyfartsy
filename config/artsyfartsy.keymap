@@ -31,18 +31,19 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
+// {Key}{Top,Bottom}{Index,Middle,Ring,Pinky}
 
 // ARTS Row
-#define KEY_A 3
-#define KEY_R 2
-#define KEY_T 1
-#define KEY_S 0
-
+#define KTI 3 // Index
+#define KTM 2 // Middle
+#define KTR 1 // Ring
+#define KTP 0 // Pinky
+ 
 // EYIO Row
-#define KEY_E 7
-#define KEY_Y 6
-#define KEY_I 5
-#define KEY_O 4
+#define KBI 7 // Index
+#define KBM 6 // Middle
+#define KBR 5 // Ring
+#define KBP 4 // Pinky
 
 
 // BEHAVIOR
@@ -74,8 +75,19 @@
 	'-----------------------' 
 */
 // ARTSEY COMBOS
-
-
+// example
+// combos {
+//        compatible = "zmk,combos";
+//        combo_esc {
+//            timeout-ms = <50>;
+//            key-positions = <0 1>;
+//            bindings = <&kp ESC>;
+//        };
+*/
+   combos {
+        compatible = "zmk,combos";
+		COMBO(1,&kp ENTER,KTI,KBI)
+   }
 
 // KEYMAP
 // ====================================================
