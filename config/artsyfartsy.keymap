@@ -33,13 +33,13 @@
 */
 // {Key}{Top,Bottom}{Index,Middle,Ring,Pinky}
 
-// ARTS Row
+// ARTS Row Top
 #define KTI 3 // Index
 #define KTM 2 // Middle
 #define KTR 1 // Ring
 #define KTP 0 // Pinky
  
-// EYIO Row
+// EYIO Row Bottom
 #define KBI 7 // Index
 #define KBM 6 // Middle
 #define KBR 5 // Ring
@@ -86,7 +86,10 @@
 
    combos {
         compatible = "zmk,combos";
-		COMBO(1,&kp ENTER,KTI KBI)
+		/***************
+		* 2 key combos
+		****************/
+		COMBO(1,&kp ENTER,KTI KBI,0 1 2 3 4 5)
    }
 
 // KEYMAP
