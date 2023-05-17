@@ -105,7 +105,7 @@
 	'-----------------------' 
 */
 		// LAYER: NUMBERS 1
-		default_layer {
+		numbers_layer {
 			label = "Numbers";
 			bindings = <
 			&none       &kp 3       &kp 2       &kp 1 
@@ -121,7 +121,7 @@
 	'-----------------------' 
 */
 		// LAYER: HFREQ 2
-		default_layer {
+		hfreq_layer {
 			label = "HFreq";
 			bindings = <
 			&none       &none       &none       &none 
@@ -137,7 +137,7 @@
 	'-----------------------' 
 */
 		// LAYER: LFREQ 3
-		default_layer {
+		lfreq_layer {
 			label = "LFreq";
 			bindings = <
 			&none       &none       &none       &none 
@@ -154,7 +154,7 @@
 	'-----------------------' 
 */
 		// LAYER: CUSTOM 4
-		default_layer {
+		custom_layer {
 			label = "Custom";
 			bindings = <
 			&none       &none       &none       &none 
@@ -170,7 +170,7 @@
 	'-----------------------' 
 */
 		// LAYER: BLE 5
-		default_layer {
+		ble_layer {
 			label = "Bluetooth";
 			bindings = <
 			&none       &none       &none       &none 
