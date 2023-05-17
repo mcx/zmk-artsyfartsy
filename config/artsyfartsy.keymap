@@ -11,7 +11,11 @@
 // LAYERS
 // ====================================================
 #define BASE    0
-
+#define NUMBERS 1
+#define HFREQ 	2
+#define LFREQ 	3
+#define CUSTOM 	4
+#define BLE		5
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -91,6 +95,102 @@
 			bindings = <
 			&kp S       &kp T       &kp R       &kp A 
 			&kp O       &kp I       &kp SPACE   &kp E 
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+/*  1 = Numbers
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+	keymap {
+		compatible = "zmk,keymap";
+
+		// LAYER: NUMBERS 1
+		default_layer {
+			label = "Numbers";
+			bindings = <
+			&none       &kp 3       &kp 2       &kp 1 
+			&none       &kp 6       &kp 5       &kp 4 
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+/*  2 = High Frequency
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+	keymap {
+		compatible = "zmk,keymap";
+
+		// LAYER: HFREQ 2
+		default_layer {
+			label = "HFreq";
+			bindings = <
+			&none       &none       &none       &none 
+			&none       &none       &none       &none
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+/*  3 = Low Frequency
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+	keymap {
+		compatible = "zmk,keymap";
+
+		// LAYER: LFREQ 3
+		default_layer {
+			label = "LFreq";
+			bindings = <
+			&none       &none       &none       &none 
+			&none       &none       &none       &none
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+
+/*  4 = Custom
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+	keymap {
+		compatible = "zmk,keymap";
+
+		// LAYER: CUSTOM 4
+		default_layer {
+			label = "Custom";
+			bindings = <
+			&none       &none       &none       &none 
+			&none       &none       &none       &none
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+/*  5 = Bluetooth
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+	keymap {
+		compatible = "zmk,keymap";
+
+		// LAYER: BLE 5
+		default_layer {
+			label = "Bluetooth";
+			bindings = <
+			&none       &none       &none       &none 
+			&none       &none       &none       &none
 			>;
 		};
 
