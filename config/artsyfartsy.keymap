@@ -79,16 +79,15 @@
 
 // KEYMAP
 // ====================================================
-
+	keymap {
+		compatible = "zmk,keymap";
+// -----------------------------------------------------------------------------		
 /*  0 = Base
 	.-----------------------.
 	|  0  |  1  |  2  |  3  |
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: BASE 0
 		default_layer {
 			label = "Base";
@@ -105,9 +104,6 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: NUMBERS 1
 		default_layer {
 			label = "Numbers";
@@ -124,9 +120,6 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: HFREQ 2
 		default_layer {
 			label = "HFreq";
@@ -143,9 +136,6 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: LFREQ 3
 		default_layer {
 			label = "LFreq";
@@ -163,9 +153,6 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: CUSTOM 4
 		default_layer {
 			label = "Custom";
@@ -182,9 +169,6 @@
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-	keymap {
-		compatible = "zmk,keymap";
-
 		// LAYER: BLE 5
 		default_layer {
 			label = "Bluetooth";
