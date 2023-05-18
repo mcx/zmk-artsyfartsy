@@ -261,7 +261,7 @@
 		extra_layer {
 			label = "Extra";
 			bindings = <
-			&none		&KP COMMA  	&kp PERIOD	&kp BACKSPACE
+			&none		&kp COMMA  	&kp PERIOD	&kp BACKSPACE
 			&none 		&kp LC(DEL) &kp DEL 	&kp LC(BACKSPACE)
 			>;
 		};
