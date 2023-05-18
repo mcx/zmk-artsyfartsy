@@ -16,7 +16,8 @@
 #define HFREQ 		3
 #define LFREQ 		4
 #define CUSTOM 		5
-#define BLE			6
+#define EXTRA		6
+#define BLE			7
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -124,8 +125,8 @@
 		* 3 key combos
 		****************/
 		COMBO(27,&kp ESC,KTI KTM KBP,0 1 2 3 4 5 6)
-		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)
-		COMBO(29,&tog NUMBERS,KBP KTR KBM,0 1 2 3 4 5 6)
+		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)			// Toggle NAVIGATION 02
+		COMBO(29,&kp CAPS,KBP KTR KBM,0 1 2 3 4 5 6)
 
 		COMBO(30,&kp M,KBP KBR KBM,0)
 		COMBO(31,&kp D,KTR KTM KTI,0)
@@ -143,8 +144,8 @@
 
 		COMBO(39,&kp TAB,KBP KTR KTM KTI,0 1 2 3 4 5 6)
 		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)
-		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)
-		COMBO(42,&kp CAPS,KTR KTM KBR KBM,0 1 2 3 4 5 6)
+		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)			// Toggle BLE 07
+		COMBO(42,&tog NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// Toggle NUMBERS 01
 
    };
 
@@ -250,13 +251,29 @@
 		};
 
 // -----------------------------------------------------------------------------
-/*  6 = Bluetooth
+/*  6 = Extra
 	.-----------------------.
 	|  0  |  1  |  2  |  3  |
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
-		// LAYER: BLE 6
+		// LAYER: EXTRA 6
+		extra_layer {
+			label = "Extra";
+			bindings = <
+			&none		&none    	&kp DEL     	&kp BACKSPACE
+			&none 		&none    	&kp LC(DEL)  	&kp LC(BACKSPACE)
+			>;
+		};
+
+// -----------------------------------------------------------------------------
+/*  7 = Bluetooth
+	.-----------------------.
+	|  0  |  1  |  2  |  3  |
+	|  4  |  5  |  6  |  7  |  
+	'-----------------------' 
+*/
+		// LAYER: BLE 7
 		ble_layer {
 			label = "Bluetooth";
 			bindings = <
