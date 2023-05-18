@@ -16,7 +16,7 @@
 #define HFREQ 		3
 #define LFREQ 		4
 #define CUSTOM 		5
-#define BLE			6
+#define BLE		6
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -163,7 +163,7 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp S      		&kp T       &kp R       &lt HFREQ  A 
+			&kp S     	&kp T       &kp R       &lt HFREQ  A 
 			&lt CUSTOM O    &kp I       &kp SPACE   &lt LFREQ E 
 			>;
 		};
