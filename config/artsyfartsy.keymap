@@ -164,8 +164,8 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&lt EXTRA S    	&kp T       &kp R       &lt HFREQ  A 
-			&lt CUSTOM O    &kp I       &kp SPACE   &lt LFREQ E 
+			&lt CUSTOM S   &kp T       &kp R       &lt HFREQ  A 
+			&lt EXTRA O    &kp I       &kp SPACE   &lt LFREQ E 
 			>;
 		};
 
@@ -245,8 +245,8 @@
 		custom_layer {
 			label = "Custom";
 			bindings = <
-			&kp C_PREV  &kp LS(LT)    	&kp LS(GT)     	&kp C_NEXT
-			&none		&kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE
+			&none  		&kp LS(LT)    	&kp LS(GT)     	&kp C_NEXT
+			&kp C_PREV	&kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE
 			>;
 		};
 
@@ -261,8 +261,8 @@
 		extra_layer {
 			label = "Extra";
 			bindings = <
-			&none		&none    	&kp DEL     	&kp BACKSPACE
-			&none 		&none    	&kp LC(DEL)  	&kp LC(BACKSPACE)
+			&none		&KP COMMA  	&kp PERIOD	&kp BACKSPACE
+			&none 		&kp LC(DEL) &kp DEL 	&kp LC(BACKSPACE)
 			>;
 		};
 
