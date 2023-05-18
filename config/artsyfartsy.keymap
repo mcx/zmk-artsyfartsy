@@ -22,8 +22,6 @@
 &lt { quick_tap_ms = <200>; };
 // Sticky Layer Behavior - release sticky behavior after x ms
 &sk { release-after-ms = <1800>; };
-// Key Toggle Behavior - release toggle behavior after x ms
-&kt { release-after-ms = <8000>; };
 
 // ARTSEY DEFINITIONS (use in conjunction with ARTSEY COMBOS)
 // ====================================================
