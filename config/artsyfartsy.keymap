@@ -79,7 +79,7 @@
 // name of the combo, output of the combo, input for the combo, applied on which layers
 	#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
 	combo_##NAME { \
-		timeout-ms = <100>; \
+		timeout-ms = <120>; \
 		bindings = <BINDINGS>; \
 		key-positions = <KEYPOS>; \
 		layers = <LAYER>; \
@@ -163,8 +163,8 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp S       &kp T       &kp R       &lt HFREQ  A 
-			&kp O       &kp I       &kp SPACE   &lt LFREQ E 
+			&kp S      		&kp T       &kp R       &lt HFREQ  A 
+			&lt CUSTOM O    &kp I       &kp SPACE   &lt LFREQ E 
 			>;
 		};
 
@@ -211,8 +211,8 @@
 		hfreq_layer {
 			label = "HFreq";
 			bindings = <
-			&none       &none       &none       &none 
-			&none       &none       &none       &none
+			&kp LBRC    &kp LPAR    &kp RPAR    &none 
+			&kp RBRC    &kp LBKT    &kp RBKT    &kp PIPE
 			>;
 		};
 
@@ -227,8 +227,8 @@
 		lfreq_layer {
 			label = "LFreq";
 			bindings = <
-			&none       &none       &none       &none 
-			&none       &none       &none       &none
+			&kp GRAVE   &kp SEMI    &kp COLON   &kp BSLH 
+			&kp EXCL    &kp MINUS   &kp QMARK   &none
 			>;
 		};
 
