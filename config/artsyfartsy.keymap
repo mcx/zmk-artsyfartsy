@@ -163,7 +163,7 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp S     	&kp T       &kp R       &lt HFREQ  A 
+			&kp S     		&kp T       &kp R       &lt HFREQ  A 
 			&lt CUSTOM O    &kp I       &kp SPACE   &lt LFREQ E 
 			>;
 		};
@@ -245,7 +245,7 @@
 			label = "Custom";
 			bindings = <
 			&kp C_PREV  &kp LS(LT)    	&kp LS(GT)     	&kp C_NEXT
-			&kp C_MUTE  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PP
+			&none		&kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE
 			>;
 		};
 
