@@ -138,7 +138,13 @@
 		/***************
 		* 4 key combos
 		****************/
+		COMBO(37,&kp Y,KBP KBR KBM KBI,0)
+		COMBO(38,&kp Z,KTP KTR KTM KTI,0)
 
+		COMBO(39,&kp TAB,KBP KTR KTM KTI,0 1 2 3 4 5 6)
+		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)
+		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)
+		COMBO(42,&tog BLE,KBP KBR KBM KTI,0 1 2 3 4 5 6)
 
    };
 
@@ -254,8 +260,8 @@
 		ble_layer {
 			label = "Bluetooth";
 			bindings = <
-			&none       &none       &none       &none 
-			&none       &none       &none       &none
+			&bt BT_NXT       &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3 
+			&bt BT_PRV       &sys_reset    	&bootloader		 &bt BT_CLR
 			>;
 		};
 
