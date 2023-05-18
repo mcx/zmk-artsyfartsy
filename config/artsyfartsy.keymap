@@ -163,8 +163,8 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp S       &kp T       &kp R       &kp A 
-			&kp O       &kp I       &kp SPACE   &kp E 
+			&kp S       &kp T       &kp R       &lt HFREQ  A 
+			&kp O       &kp I       &kp SPACE   &lt LFREQ E 
 			>;
 		};
 
