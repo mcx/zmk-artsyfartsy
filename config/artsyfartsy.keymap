@@ -79,7 +79,7 @@
 // name of the combo, output of the combo, input for the combo, applied on which layers
 	#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
 	combo_##NAME { \
-		timeout-ms = <50>; \
+		timeout-ms = <100>; \
 		bindings = <BINDINGS>; \
 		key-positions = <KEYPOS>; \
 		layers = <LAYER>; \
@@ -126,6 +126,18 @@
 		COMBO(27,&kp ESC,KTI KTM KBP,0 1 2 3 4 5 6)
 		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)
 		COMBO(29,&tog NUMBERS,KBP KTR KBM,0 1 2 3 4 5 6)
+
+		COMBO(30,&kp M,KBP KBR KBM,0)
+		COMBO(31,&kp D,KTR KTM KTI,0)
+		COMBO(32,&kp P,KBP KBR KBI,0)
+		COMBO(33,&kp Q,KTP KTR KTI,0)
+		COMBO(34,&kp X,KTP KTR KTM,0)
+		COMBO(35,&kp L,KBR KBM KBI,0)
+		COMBO(36,&kp SQT,KBR KBM KTI,0)
+
+		/***************
+		* 4 key combos
+		****************/
 
 
    };
