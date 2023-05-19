@@ -17,7 +17,7 @@
 #define LFREQ 		4
 #define CUSTOM 		5
 #define EXTRA		6
-#define BLE			7
+#define BLE		7
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -26,13 +26,14 @@
 
 // ARTSEY DEFINITIONS (use in conjunction with ARTSEY COMBOS)
 // ====================================================
-// ZMK forces you to define combos in terms of HW key positions
+// ZMK uses HW key positions for the combos
 /*
 	.-----------------------.
 	|  0  |  1  |  2  |  3  |
 	|  4  |  5  |  6  |  7  |  
 	'-----------------------' 
 */
+// change according to your HW positions on your shield (board)
 // {Key}{Top,Bottom}{Index,Middle,Ring,Pinky}
 
 // ARTS Row Top
@@ -91,42 +92,42 @@
 		/***************
 		* 2 key combos
 		****************/
-		COMBO(1,&kp ENTER,KTI KBI,0 1 2 3 4 5 6)
-		COMBO(2,&sk LCTRL,KBI KTP, 0 1 2 3 4 5 6)
-		COMBO(3,&sk LGUI,KBM KTP, 0 1 2 3 4 5 6)
-		COMBO(4,&sk RALT,KBR KTP, 0 1 2 3 4 5 6)
-		COMBO(5,&kp BACKSPACE,KBI KTM, 0 1 2 3 4 5 6)
-		COMBO(6,&kp DELETE,KBR KTM, 0 1 2 3 4 5 6)
-		COMBO(7,&kt LSHFT,KBM KTM, 0 1 2 3 4 5 6)
+		COMBO(1,&kp ENTER,KTI KBI,0 1 2 3 4 5 6)		// ENTER
+		COMBO(2,&sk LCTRL,KBI KTP, 0 1 2 3 4 5 6)		// LCTRL *oneshot
+		COMBO(3,&sk LGUI,KBM KTP, 0 1 2 3 4 5 6)		// LGUI  *oneshot
+		COMBO(4,&sk RALT,KBR KTP, 0 1 2 3 4 5 6)		// RALT  *oneshot
+		COMBO(5,&kp BACKSPACE,KBI KTM, 0 1 2 3 4 5 6)		// BACKSPACE
+		COMBO(6,&kp DELETE,KBR KTM, 0 1 2 3 4 5 6)		// DELETE
+		COMBO(7,&kt LSHFT,KBM KTM, 0 1 2 3 4 5 6)		// LSHIFT #toggle
 
-		COMBO(8,&kp B,KBI KBP, 0)
-		COMBO(9,&kp C,KBI KBM, 0)
-		COMBO(10,&kp N,KBP KBR, 0)
-		COMBO(11,&kp F,KTM KTI, 0)
-		COMBO(12,&kp G,KTR KTM, 0)
-		COMBO(13,&kp U,KBR KBM, 0)
-		COMBO(14,&kp H,KBI KBR, 0)
-		COMBO(15,&kp V,KTP KTM, 0)
-		COMBO(16,&kp J,KTP KTR, 0)
-		COMBO(17,&kp W,KTP KTI, 0)
-		COMBO(18,&kp K,KBP KBM, 0)
+		COMBO(8,&kp B,KBI KBP, 0)				// B
+		COMBO(9,&kp C,KBI KBM, 0)				// C
+		COMBO(10,&kp N,KBP KBR, 0)				// N
+		COMBO(11,&kp F,KTM KTI, 0)				// F
+		COMBO(12,&kp G,KTR KTM, 0)				// G
+		COMBO(13,&kp U,KBR KBM, 0)				// U
+		COMBO(14,&kp H,KBI KBR, 0)				// H
+		COMBO(15,&kp V,KTP KTM, 0)				// V
+		COMBO(16,&kp J,KTP KTR, 0)				// J
+		COMBO(17,&kp W,KTP KTI, 0)				// W
+		COMBO(18,&kp K,KBP KBM, 0)				// K
 
-		COMBO(19,&kp PERIOD,KBM KTI, 0)
-		COMBO(20,&kp COMMA,KBR KTI, 0)
-		COMBO(21,&kp SLASH,KBP KTI, 0)
-		COMBO(22,&kp EXCL,KTR KBR, 0)
+		COMBO(19,&kp PERIOD,KBM KTI, 0)				// PERIOD
+		COMBO(20,&kp COMMA,KBR KTI, 0)				// COMMA
+		COMBO(21,&kp SLASH,KBP KTI, 0)				// SLASH
+		COMBO(22,&kp EXCL,KTR KBR, 0)				// EXCLAMATION
 
-		COMBO(23,&kp N7,KTM KTI, 1)
-		COMBO(24,&kp N8,KTR KTM, 1)
-		COMBO(25,&kp N9,KBM KBI, 1)
-		COMBO(26,&kp N0,KBR KBM, 1)
+		COMBO(23,&kp N7,KTM KTI, 1)				// 7
+		COMBO(24,&kp N8,KTR KTM, 1)				// 8
+		COMBO(25,&kp N9,KBM KBI, 1)				// 9
+		COMBO(26,&kp N0,KBR KBM, 1)				// 0
 
 		/***************
 		* 3 key combos
 		****************/
-		COMBO(27,&kp ESC,KTI KTM KBP,0 1 2 3 4 5 6)
-		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)			// Toggle NAVIGATION 02
-		COMBO(29,&kp CAPS,KBP KTR KBM,0 1 2 3 4 5 6)
+		COMBO(27,&kp ESC,KTI KTM KBP,0 1 2 3 4 5 6)			// ESC
+		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)		// NAVIGATION LAYER #toggle
+		COMBO(29,&kp CAPS,KBP KTR KBM,0 1 2 3 4 5 6)			// CAPS
 
 		COMBO(30,&kp M,KBP KBR KBM,0)
 		COMBO(31,&kp D,KTR KTM KTI,0)
@@ -139,13 +140,13 @@
 		/***************
 		* 4 key combos
 		****************/
-		COMBO(37,&kp Y,KBP KBR KBM KBI,0)
-		COMBO(38,&kp Z,KTP KTR KTM KTI,0)
+		COMBO(37,&kp Y,KBP KBR KBM KBI,0)				// Y
+		COMBO(38,&kp Z,KTP KTR KTM KTI,0)				// Z
 
-		COMBO(39,&kp TAB,KBP KTR KTM KTI,0 1 2 3 4 5 6)
-		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)
-		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)			// Toggle BLE 07
-		COMBO(42,&tog NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// Toggle NUMBERS 01
+		COMBO(39,&kp TAB,KBP KTR KTM KTI,0 1 2 3 4 5 6)			// TAB
+		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)		// LSHIFT *oneshot
+		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)		// BLUETOOTH LAYER #toggle
+		COMBO(42,&tog NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// NUMBERS LAYER #toggle
 
    };
 
@@ -155,10 +156,10 @@
 		compatible = "zmk,keymap";
 // -----------------------------------------------------------------------------		
 /*  0 = Base
-	.-----------------------.
-	|  0  |  1  |  2  |  3  |
-	|  4  |  5  |  6  |  7  |  
-	'-----------------------' 
+	 .-----------------------.
+Custom --|-[0] |  1  |  2  | [3]-|-- Low Frequency		[#]-- HOLD to access Layer
+Extra  --|-[4] |  5  |  6  | [7]-|-- High Frequency
+	 '-----------------------' 
 */
 		// LAYER: BASE 0
 		default_layer {
@@ -262,7 +263,7 @@
 			label = "Extra";
 			bindings = <
 			&none		&kp COMMA  	&kp PERIOD	&kp BACKSPACE
-			&none 		&kp LC(DEL) &kp DEL 	&kp LC(BACKSPACE)
+			&none 		&kp LC(DEL) 	&kp DEL 	&kp LC(BACKSPACE)
 			>;
 		};
 
@@ -278,7 +279,7 @@
 			label = "Bluetooth";
 			bindings = <
 			&bt BT_NXT       &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3 
-			&bt BT_PRV       &sys_reset    	&bootloader		 &bt BT_CLR
+			&bt BT_PRV       &sys_reset    	&bootloader	 &bt BT_CLR
 			>;
 		};
 
