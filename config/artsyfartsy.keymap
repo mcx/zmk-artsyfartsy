@@ -147,6 +147,7 @@
 		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)		// LSHIFT *oneshot
 		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)		// BLUETOOTH LAYER #toggle
 		COMBO(42,&tog NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// NUMBERS LAYER #toggle
+		COMBO(43,&to BASE,KTP KTR KBP KBR,0 1 2 3 4 5 6)		// BACK TO BASE LAYER
 
    };
 
@@ -246,7 +247,7 @@ Extra  --|-[4] |  5  |  6  | [7]-|-- High Frequency
 		custom_layer {
 			label = "Custom";
 			bindings = <
-			&none  		&kp LS(LT)    	&kp LS(GT)     	&sk RALT
+			&none  		&kp LS(LT)    	&kp LS(GT)     	&sk LALT
 			&sk LGUI	&kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE
 			>;
 		};
