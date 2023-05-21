@@ -213,8 +213,8 @@ Extra  --|-[4] |  5  |  6  | [7]-|-- High Frequency
 		hfreq_layer {
 			label = "HFreq";
 			bindings = <
-			&sk LSHFT   &kp LPAR    &kp RPAR    &none 
-			&sk RALT    &kp LBKT    &kp RBKT    &kp PIPE
+			&sk RALT   &kp LPAR    &kp RPAR    &none 
+			&sk LSHFT  &kp LBKT    &kp RBKT    &kp PIPE
 			>;
 		};
 
