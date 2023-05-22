@@ -117,16 +117,16 @@
 		COMBO(21,&kp SLASH,KBP KTI, 0)				// SLASH
 		COMBO(22,&kp EXCL,KTR KBR, 0)				// EXCLAMATION
 
-		COMBO(23,&kp N7,KTM KTI, 1)				// 7
-		COMBO(24,&kp N8,KTR KTM, 1)				// 8
-		COMBO(25,&kp N9,KBM KBI, 1)				// 9
-		COMBO(26,&kp N0,KBR KBM, 1)				// 0
+		COMBO(23,&kp N7,KTR KTM, 1)				// 7
+		COMBO(24,&kp N8,KTM KTI, 1)				// 8
+		COMBO(25,&kp N9,KBR KBM, 1)				// 9
+		COMBO(26,&kp N0,KBM KBI, 1)				// 0
 
 		/***************
 		* 3 key combos
 		****************/
 		COMBO(27,&kp ESC,KTI KTM KBP,0 1 2 3 4 5 6)			// ESC
-		COMBO(28,&tog NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)		// NAVIGATION LAYER #toggle
+		COMBO(28,&to NAVIGATION,KBR KTM KBI,0 1 2 3 4 5 6)		// LAYER: NAVIGATION >to
 		COMBO(29,&kp CAPS,KBP KTR KBM,0 1 2 3 4 5 6)			// CAPS
 
 		COMBO(30,&kp M,KBP KBR KBM,0)
@@ -144,10 +144,10 @@
 		COMBO(38,&kp Z,KTP KTR KTM KTI,0)				// Z
 
 		COMBO(39,&kp TAB,KBP KTR KTM KTI,0 1 2 3 4 5 6)			// TAB
-		COMBO(40,&sk LSHFT,KTP KTR KTM KBI,0 1 2 3 4 5 6)		// LSHIFT *oneshot
-		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)		// BLUETOOTH LAYER #toggle
-		COMBO(42,&tog NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// NUMBERS LAYER #toggle
-		COMBO(43,&to BASE,KTP KTR KBP KBR,0 1 2 3 4 5 6)		// BACK TO BASE LAYER
+		COMBO(40,&to BASE,KTP KTR KTM KBI,0 1 2 3 4 5 6)		// LAYER: BASE >to
+		COMBO(41,&tog BLE,KTP KBP KTI KBI,0 1 2 3 4 5 6)		// LAYER: BLUETOOTH #toggle
+		COMBO(42,&to NUMBERS,KTR KTM KBR KBM,0 1 2 3 4 5 6)		// LAYER: NUMBERS >to
+		COMBO(43,&to BASE,KTP KTR KBP KBR,0 1 2 3 4 5 6)		// LAYER: BASE (Fallback) >to
 
    };
 
@@ -182,8 +182,8 @@ Extra  --|-[4] |  5  |  6  | [7]-|-- High Frequency
 		numbers_layer {
 			label = "Numbers";
 			bindings = <
-			&kp PLUS    &kp N3      &kp N2      &kp N1 
-			&kp MINUS   &kp N6      &kp N5      &kp N4 
+			&kp PLUS    &kp N1      &kp N2      &kp N3
+			&kp MINUS   &kp N4      &kp N5      &kp N6
 			>;
 		};
 
