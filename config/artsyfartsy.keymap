@@ -166,8 +166,8 @@ Extra  --|-[4] |  5  |  6  | [7]-|-- High Frequency
 		default_layer {
 			label = "Base";
 			bindings = <
-			&lt CUSTOM S   &kp T       &kp R       &lt HFREQ A 
-			&lt EXTRA O    &kp I       &kp SPACE   &lt LFREQ E 
+			&lt CUSTOM A   &kp R       &kp T       &lt HFREQ S 
+			&lt EXTRA E    &kp SPACE       &kp I   &lt LFREQ O 
 			>;
 		};
 
