@@ -37,16 +37,16 @@
 // {Key}{Top,Bottom}{Index,Middle,Ring,Pinky}
 
 // ARTS Row Top
-#define KTI 3 // Index
-#define KTM 2 // Middle
-#define KTR 1 // Ring
-#define KTP 0 // Pinky
+#define KTI 0 // Index
+#define KTM 1 // Middle
+#define KTR 2 // Ring
+#define KTP 3 // Pinky
  
 // EYIO Row Bottom
-#define KBI 7 // Index
-#define KBM 6 // Middle
-#define KBR 5 // Ring
-#define KBP 4 // Pinky
+#define KBI 4 // Index
+#define KBM 5 // Middle
+#define KBR 6 // Ring
+#define KBP 7 // Pinky
 
 
 // BEHAVIOR
